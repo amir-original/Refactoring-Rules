@@ -1,5 +1,5 @@
 package terraficLight;
 
-public enum TerrificLightState {
+public enum RawTrafficLightState {
     RED,YELLOW,GREEN
 }
