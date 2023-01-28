@@ -1,4 +1,4 @@
-package terraficLight;
+package trafficLight;
 
 public class Car {
     private boolean isDrive;
