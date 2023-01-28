@@ -1,6 +1,6 @@
 package terraficLight;
 
-public interface TerrificLightState2 {
+public interface TrafficLightState {
     boolean isRed();
     boolean isYellow();
     boolean isGreen();

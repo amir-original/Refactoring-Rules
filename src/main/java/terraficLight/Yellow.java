@@ -1,6 +1,6 @@
 package terraficLight;
 
-public class Yellow implements TerrificLightState2 {
+public class Yellow implements TrafficLightState {
     @Override
     public boolean isRed() {
         return false;
