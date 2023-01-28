@@ -1,6 +1,7 @@
 package terraficLight;
 
 public class Car {
+
     private boolean isDrive;
 
     public void stop() {
