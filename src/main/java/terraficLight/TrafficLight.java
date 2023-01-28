@@ -9,9 +9,6 @@ public class TrafficLight {
     }
 
     public void updateCareForLight(TrafficLightState current){
-        if (current.isRed())
-            car.stop();
-        else
-            car.drive();
+       current.updateCar(car);
     }
 }

@@ -16,4 +16,8 @@ public class Green implements TrafficLightState {
     public boolean isGreen() {
         return true;
     }
+
+    public void updateCar(Car car) {
+        car.drive();
+    }
 }
