@@ -1,4 +1,4 @@
-package terraficLight;
+package trafficLight;
 
 public class TrafficLight {
     private final Car car;
@@ -8,7 +8,7 @@ public class TrafficLight {
         this.car = car;
     }
 
-    public void updateCareForLight(TrafficLightState current){
+    public void updateCarForLight(TrafficLightState current){
        current.updateCar(car);
     }
 }

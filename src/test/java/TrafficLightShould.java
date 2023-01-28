@@ -1,26 +1,26 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import terraficLight.Car;
-import terraficLight.Green;
-import terraficLight.Red;
-import terraficLight.TrafficLight;
+import trafficLight.Car;
+import trafficLight.Green;
+import trafficLight.Red;
+import trafficLight.TrafficLight;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TerrificLightShould {
+public class TrafficLightShould {
 
     private Car car;
-    private TrafficLight terrificLight;
+    private TrafficLight trafficLight;
 
     @BeforeEach
     void setUp() {
         car = new Car();
-        terrificLight = new TrafficLight(car);
+        trafficLight = new TrafficLight(car);
     }
 
     @Test
     void stop_car_when_light_is_red() {
-        terrificLight.updateCareForLight(new Red());
+        trafficLight.updateCarForLight(new Red());
 
         assertThat(car.isDrive()).isFalse();
     }
@@ -28,7 +28,7 @@ public class TerrificLightShould {
     @Test
     void drive_car_when_light_is_not_red() {
 
-        terrificLight.updateCareForLight(new Green());
+        trafficLight.updateCarForLight(new Green());
 
         assertThat(car.isDrive()).isTrue();
     }
