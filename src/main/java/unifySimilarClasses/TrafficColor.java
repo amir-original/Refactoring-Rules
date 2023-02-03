@@ -1,7 +1,7 @@
 package unifySimilarClasses;
 
 public interface TrafficColor {
-    String color();
+    ColorState color();
     void check(Car car);
 
 
