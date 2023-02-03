@@ -2,10 +2,10 @@ package unifySimilarClasses;
 
 public class Green implements TrafficColor {
 
-    private String color;
+    private final String color;
 
-    public Green() {
-        this.color = "green";
+    public Green(String color) {
+        this.color = color;
     }
 
     @Override
@@ -15,10 +15,11 @@ public class Green implements TrafficColor {
 
     @Override
     public void check(Car car) {
-        if (color().equals("green")){
+        if (color().equals("green")) {
             car.drive();
-        }
-        else if (color().equals("red")) {
+        } else if (color().equals("red")) {
+            car.stop();
+        } else if (this.color().equals("yellow")) {
             car.stop();
         }
 
