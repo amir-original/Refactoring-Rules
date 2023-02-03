@@ -9,6 +9,9 @@ public class Green implements TrafficColor {
 
     @Override
     public void check(Car car) {
-        car.drive();
+        if (true){
+            car.drive();
+        }
+
     }
 }
