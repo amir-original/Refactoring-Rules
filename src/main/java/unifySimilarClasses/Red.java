@@ -9,7 +9,7 @@ public class Red implements TrafficColor {
 
     @Override
     public void check(Car car) {
-        if (true) {
+        if (color().equals("red")) {
             car.stop();
         }
     }
