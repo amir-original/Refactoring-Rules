@@ -6,7 +6,7 @@ public class TrafficLight {
         if (t.color().equals("red")) return new Green();
         else if (t.color().equals("green")) return new Yellow();
         else if (t.color().equals("yellow")) return new Red();
-        
+
         throw new IllegalArgumentException();
     }
 }
