@@ -12,6 +12,9 @@ public class Green implements TrafficColor {
         if (color().equals("green")){
             car.drive();
         }
+        else if (color().equals("red")) {
+            car.stop();
+        }
 
     }
 }
