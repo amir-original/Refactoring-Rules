@@ -2,9 +2,15 @@ package unifySimilarClasses;
 
 public class Red implements TrafficColor {
 
+    private String color;
+
+    public Red() {
+        this.color = "red";
+    }
+
     @Override
     public String color() {
-        return "red";
+        return this.color;
     }
 
     @Override
