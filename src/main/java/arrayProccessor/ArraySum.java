@@ -10,9 +10,13 @@ public class ArraySum {
     public int process(int[] arrays){
 
         for (int element : arrays) {
-            accumulator +=element;
+            processElement(element);
         }
 
         return accumulator;
+    }
+
+    private void processElement(int element) {
+        accumulator += element;
     }
 }

@@ -7,13 +7,17 @@ public class ArrayMinimum {
         this.accumulator = accumulator;
     }
 
-    public int process(int[] arrays){
+    public int process(int[] arrays) {
 
         for (int element : arrays) {
-            if (accumulator > element)
-                accumulator =element;
+            processElement(element);
         }
 
         return accumulator;
+    }
+
+    private void processElement(int element) {
+        if (accumulator > element)
+            accumulator = element;
     }
 }
