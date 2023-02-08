@@ -1,22 +1,19 @@
 package arrayProccessor;
 
 public class ArraySum {
-    private int accumulator;
+    private final SumProcessor processor;
 
     public ArraySum(int accumulator) {
-        this.accumulator = accumulator;
+        this.processor = new SumProcessor(accumulator);
     }
 
     public int process(int[] arrays){
 
         for (int element : arrays) {
-            processElement(element);
+            processor.processElement(element);
         }
 
-        return accumulator;
+        return processor.getAccumulator();
     }
 
-    private void processElement(int element) {
-        accumulator += element;
-    }
 }

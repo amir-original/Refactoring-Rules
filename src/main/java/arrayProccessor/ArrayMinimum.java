@@ -1,23 +1,19 @@
 package arrayProccessor;
 
 public class ArrayMinimum {
-    private int accumulator;
+    private final MinimumProcessor processor;
 
     public ArrayMinimum(int accumulator) {
-        this.accumulator = accumulator;
+        this.processor = new MinimumProcessor(accumulator);
     }
 
     public int process(int[] arrays) {
 
         for (int element : arrays) {
-            processElement(element);
+            processor.processElement(element);
         }
 
-        return accumulator;
+        return processor.getAccumulator();
     }
 
-    private void processElement(int element) {
-        if (accumulator > element)
-            accumulator = element;
-    }
 }
