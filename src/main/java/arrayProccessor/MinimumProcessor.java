@@ -1,6 +1,6 @@
 package arrayProccessor;
 
-public class MinimumProcessor {
+public class MinimumProcessor implements ElementProcessor {
 
     private int accumulator;
 
@@ -9,7 +9,7 @@ public class MinimumProcessor {
         this.accumulator = accumulator;
     }
 
-    void processElement(int element) {
+    public void processElement(int element) {
         if (accumulator > element)
             accumulator = element;
     }

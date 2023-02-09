@@ -1,6 +1,6 @@
 package arrayProccessor;
 
-public class SumProcessor {
+public class SumProcessor implements ElementProcessor {
 
     private int accumulator;
 
@@ -9,7 +9,7 @@ public class SumProcessor {
         this.accumulator = accumulator;
     }
 
-    void processElement(int element) {
+    public void processElement(int element) {
         accumulator += element;
     }
 

@@ -1,10 +1,10 @@
 package arrayProccessor;
 
-public class ArraySum {
-    private final SumProcessor processor;
+public class BatchProcessor {
+    private final ElementProcessor processor;
 
-    public ArraySum(int accumulator) {
-        this.processor = new SumProcessor(accumulator);
+    public BatchProcessor(ElementProcessor processor) {
+        this.processor = processor;
     }
 
     public int process(int[] arrays){
