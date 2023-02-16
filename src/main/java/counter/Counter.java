@@ -3,7 +3,7 @@ package counter;
 public class Counter {
     private int counter = 0;
 
-    public int getCounter() {
+    private int getCounter() {
         return counter;
     }
 
@@ -13,5 +13,9 @@ public class Counter {
 
     public void increment(){
         counter++;
+    }
+
+    public void print(){
+        System.out.println(counter);
     }
 }
