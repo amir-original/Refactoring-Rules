@@ -3,8 +3,8 @@ package counter;
 public class Main {
 
     public static void main(String[] args) {
+        Counter counter = new Counter();
         for (int i = 0; i < 20; i++) {
-            Counter counter = new Counter();
             counter.increment();
             counter.print();
         }
