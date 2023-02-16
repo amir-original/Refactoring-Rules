@@ -13,7 +13,7 @@ public class Main {
 
 
    static void incrementCounter(Counter counter){
-        counter.setCounter(counter.getCounter() + 1);
+        counter.increment();
     }
 
 }

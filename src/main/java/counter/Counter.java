@@ -10,4 +10,8 @@ public class Counter {
     public void setCounter(int counter) {
         this.counter = counter;
     }
+
+    public void increment(){
+        counter++;
+    }
 }
